@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		EF1346A828A24AEA00F3F1C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1346A728A24AEA00F3F1C0 /* AppDelegate.swift */; };
 		EF1346AA28A24AEA00F3F1C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1346A928A24AEA00F3F1C0 /* SceneDelegate.swift */; };
-		EF1346AC28A24AEA00F3F1C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1346AB28A24AEA00F3F1C0 /* ViewController.swift */; };
+		EF1346AC28A24AEA00F3F1C0 /* CatsImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1346AB28A24AEA00F3F1C0 /* CatsImageViewController.swift */; };
 		EF1346AF28A24AEA00F3F1C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1346AD28A24AEA00F3F1C0 /* Main.storyboard */; };
 		EF1346B128A24AED00F3F1C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1346B028A24AED00F3F1C0 /* Assets.xcassets */; };
 		EF1346B428A24AED00F3F1C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1346B228A24AED00F3F1C0 /* LaunchScreen.storyboard */; };
+		EF1346BC28A2571E00F3F1C0 /* ImageCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1346BB28A2571E00F3F1C0 /* ImageCat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF1346A428A24AEA00F3F1C0 /* Kitties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kitties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1346A728A24AEA00F3F1C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF1346A928A24AEA00F3F1C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF1346AB28A24AEA00F3F1C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF1346AB28A24AEA00F3F1C0 /* CatsImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsImageViewController.swift; sourceTree = "<group>"; };
 		EF1346AE28A24AEA00F3F1C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF1346B028A24AED00F3F1C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF1346B328A24AED00F3F1C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF1346B528A24AED00F3F1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF1346BB28A2571E00F3F1C0 /* ImageCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		EF1346A628A24AEA00F3F1C0 /* Kitties */ = {
 			isa = PBXGroup;
 			children = (
-				EF1346A728A24AEA00F3F1C0 /* AppDelegate.swift */,
-				EF1346A928A24AEA00F3F1C0 /* SceneDelegate.swift */,
-				EF1346AB28A24AEA00F3F1C0 /* ViewController.swift */,
-				EF1346AD28A24AEA00F3F1C0 /* Main.storyboard */,
-				EF1346B028A24AED00F3F1C0 /* Assets.xcassets */,
-				EF1346B228A24AED00F3F1C0 /* LaunchScreen.storyboard */,
-				EF1346B528A24AED00F3F1C0 /* Info.plist */,
+				EF1346C128A26F9500F3F1C0 /* Resources */,
+				EF1346C028A26F8100F3F1C0 /* App */,
+				EF1346BF28A26F4500F3F1C0 /* Storyboards */,
+				EF1346BE28A26F2800F3F1C0 /* Models */,
+				EF1346BD28A26EF900F3F1C0 /* ViewControllers */,
 			);
 			path = Kitties;
+			sourceTree = "<group>";
+		};
+		EF1346BD28A26EF900F3F1C0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF1346AB28A24AEA00F3F1C0 /* CatsImageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EF1346BE28A26F2800F3F1C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF1346BB28A2571E00F3F1C0 /* ImageCat.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF1346BF28A26F4500F3F1C0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EF1346AD28A24AEA00F3F1C0 /* Main.storyboard */,
+				EF1346B228A24AED00F3F1C0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EF1346C028A26F8100F3F1C0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EF1346A928A24AEA00F3F1C0 /* SceneDelegate.swift */,
+				EF1346B528A24AED00F3F1C0 /* Info.plist */,
+				EF1346A728A24AEA00F3F1C0 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EF1346C128A26F9500F3F1C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF1346B028A24AED00F3F1C0 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF1346AC28A24AEA00F3F1C0 /* ViewController.swift in Sources */,
+				EF1346BC28A2571E00F3F1C0 /* ImageCat.swift in Sources */,
+				EF1346AC28A24AEA00F3F1C0 /* CatsImageViewController.swift in Sources */,
 				EF1346A828A24AEA00F3F1C0 /* AppDelegate.swift in Sources */,
 				EF1346AA28A24AEA00F3F1C0 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XL6Q59VDPK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Kitties/Info.plist;
+				INFOPLIST_FILE = Kitties/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XL6Q59VDPK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Kitties/Info.plist;
+				INFOPLIST_FILE = Kitties/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
