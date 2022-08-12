@@ -22,7 +22,7 @@ extension CatsImageViewController {
     private func fetchImageCats() {
         guard let url = URL(string: urlCats) else { return }
         
-        URLSession.shared.dataTask(with: url) { data, _, error in
+        URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             guard let data = data else {
                 print(error?.localizedDescription ?? "No error descrition")
                 return
@@ -33,10 +33,10 @@ extension CatsImageViewController {
                 imageCat.forEach { image in
                     print(image.url ?? "")
                     
-//                    let image = UIImage(named: image.url ?? "")
-//                    DispatchQueue.main.async {
-//                        self?.imageView.image = image
-//                    }
+                    let image = UIImage(data: <#T##Data#>)
+                    DispatchQueue.main.async {
+                        self?.imageView.image = image
+                    }
                     
                 }
             } catch let error {
